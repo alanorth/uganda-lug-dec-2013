@@ -1,0 +1,50 @@
+<section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Building a homogeneous computing environment
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Everywhere
+
+            <img src="img/cloud.png" style="height: 366px; border: none; background: none; box-shadow: none;">
+
+            User IDs, apps, and data should be available everywhere*
+
+            <br/>
+            *for some definitions of "everywhere"
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Users and groups
+
+            <img src="img/woman.png" style="height: 166px; border: none; background: none; box-shadow: none;">
+            <img src="img/man.png" style="height: 166px; border: none; background: none; box-shadow: none;">
+            <img src="img/woman.png" style="height: 166px; border: none; background: none; box-shadow: none;">
+
+            Consistent UID/GIDs across systems:
+
+            <br/>
+
+            - LDAP + SSSD == winning
+            - 389 LDAP works **great** with CentOS
+            - SSSD is simpler than pam_ldap and does caching
+            - Just do it
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Apps and data
+
+            Globally-available apps/data:
+
+            <br />
+
+            - NFS could work
+            - ... but doesn't scale out/up
+            - GlusterFS does!
+        </script>
+    </section>
+</section>
