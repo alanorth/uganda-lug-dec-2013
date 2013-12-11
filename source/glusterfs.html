@@ -1,0 +1,59 @@
+<section>
+    <section data-markdown>
+        <script type="text/template">
+            ## GlusterFS
+
+            <img src="img/gluster-logo.png" style="border: none; background: none; box-shadow: none;">
+
+            - Cluster filesystem from Red Hat
+            - Scale "out", not "up"
+            - Works GREAT on CentOS
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Gluster in a nutshell
+
+            <img src="img/diagram-glusterfs.png" style="border: none; background: none; box-shadow: none;">
+
+            - Abstraction of backend storage (filesystems, technology, etc)
+            - Global namespace for mounts
+            - Clients can use NFS, CIFS, "native" client (FUSE)
+            - FUSE client is moar fun (replication, distribution, etc)!
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## How we Gluster
+
+            - Two of the three storage nodes are for science data
+            - GlusterFS is replicated at application layer
+            - Clients mount using FUSE client
+
+            <br/>
+
+            ```
+            [aorth@compute0]$ mount
+            ...
+            wingu1:homes on /home type fuse.glusterfs (rw,allow_other,max_read=131072)
+            wingu0:apps on /export/apps type fuse.glusterfs (rw,allow_other,max_read=131072)
+            wingu1:data on /export/data type fuse.glusterfs (rw,allow_other,max_read=131072)
+            ```
+
+            Consistent namespaces across all compute nodes:
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## It's fast!
+
+            Doing some BLASTing against large sequence databases (WGS)
+
+            <img src="img/gluster-speed.jpg" style="height: 466px; border: none; background: none; box-shadow: none;">
+
+            - Writes are fast, but not as
+            - Our disk arrays are definitely the bottleneck now (yay?)
+            - 1GbE is "fine", but you really should think of 10GbE or IB
+        </script>
+    </section>
+</section>
