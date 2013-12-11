@@ -354,52 +354,45 @@
         <script type="text/template">
             ## Cat 6 vs Cat 6a
 
-            Cat 6 is probably fine...
+            Cat 6 is probably fine... `iperf`:
 
             ```
             [  3]  0.0-10.0 sec  11.5 GBytes  9.90 Gbits/sec
             ```
 
-            But you might as well use Cat 6a
-
-            Spec recommends Cat 6a for new 10GbE installations
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-            ## Computing
-
-            Three compute nodes:
-
-            - 88 cores
-            - 500GB RAM
+            But you should probably use Cat 6a
 
             <br/>
-            Nothing to write home about!
+
+            - This isn't fiber, copper is cheap!
+            - 10GbE spec recommends Cat 6a for new installations
         </script>
     </section>
     <section data-markdown>
         <script type="text/template">
-            ## Storage
+            ## But what about bonding?
 
-            Three storage nodes:
-
-            - 16GB RAM (each)
-            - 8 cores (each)
+            We tried bonding several 1GbE links... meh.
 
             <br/>
-            Probably overkill, but we can cache (and scale!)
+
+            - Bonding increases channel capacity, not individual flows
+            - HP switches use a Layer 3 transmit hash :(
+            - Sucks when your client/server ratio is low
         </script>
     </section>
     <section data-markdown>
         <script type="text/template">
-            ## Gluing it all together
+            ## Spare parts
 
-            Brand new 10GbE [Arista 7050T](http://www.aristanetworks.com/products/7050series/7050t) (top)
+            Parts fail, and replacements are hard to find
 
-            <img src="img/arista.jpg" style="height: 450px; border: none; background: none; box-shadow: none;">
+            <br/>
 
-            Old HP 1GbE something or other (bottom)
+            - Buy several spares with every order
+            - ie, 2+ spare drives per server
+            - ie, 1+ spare power supplies
+            - Not a problem if you have a good local supplier
         </script>
     </section>
 </section>
