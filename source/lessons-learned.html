@@ -1,0 +1,52 @@
+<section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Lessons learned
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Cat 6 vs Cat 6a
+
+            Cat 6 is probably fine... `iperf`:
+
+            ```
+            [  3]  0.0-10.0 sec  11.5 GBytes  9.90 Gbits/sec
+            ```
+
+            But you should probably use Cat 6a
+
+            <br/>
+
+            - This isn't fiber, copper is cheap!
+            - 10GbE spec recommends Cat 6a for new installations
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## But what about bonding?
+
+            We tried bonding several 1GbE links... meh.
+
+            <br/>
+
+            - Bonding increases channel capacity, not individual flows
+            - HP switches use a Layer 3 transmit hash :(
+            - Sucks when your client/server ratio is low
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Spare parts
+
+            Parts fail, and replacements are hard to find
+
+            <br/>
+
+            - Buy several spares with every order
+            - ie, 2+ spare drives per server
+            - ie, 1+ spare power supplies
+            - Not a problem if you have a good local supplier
+        </script>
+    </section>
+</section>
