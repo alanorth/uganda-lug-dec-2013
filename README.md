@@ -2,7 +2,7 @@
 
 This is a presentation I gave at the December, 2013 Uganda LUG meetup in Kampala, Uganda.
 
-You can view the presentation on GitHub Pages [here](http://alanorth.github.io/uganda-lug-dec-2013).
+You can view the presentation on GitHub Pages [here](https://alanorth.github.io/uganda-lug-dec-2013).
 
 ## LICENSE
 
