@@ -1,4 +1,4 @@
-# December, 2013 Uganda LUG Meetup
+## December, 2013 Uganda LUG Meetup
 
 This is a presentation I gave at the December, 2013 Uganda LUG meetup in Kampala, Uganda.
 
@@ -6,7 +6,7 @@ This is a presentation I gave at the December, 2013 Uganda LUG meetup in Kampala
 
 You can view the presentation on GitHub Pages [here](https://alanorth.github.io/uganda-lug-dec-2013).
 
-## Hacking
+### Hacking
 If you want to hack on this repo (ie for your own presentation) you will have to clone the repo and then initialize the reveal.js submodule:
 
     $ git submodule init
@@ -27,7 +27,7 @@ After hacking on the slides in the `source/` directory, build the presentation a
 
 The presentation will be available at [http://localhost:8000](http://localhost:8000).
 
-## LICENSE
+### LICENSE
 
 This repository contains the code of [Reveal.js](https://github.com/hakimel/reveal.js)
 which is licensed under the [MIT license](https://github.com/hakimel/reveal.js/blob/master/LICENSE).
