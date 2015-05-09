@@ -1,5 +1,4 @@
 ## December, 2013 Uganda LUG Meetup
-
 This is a presentation I gave at the December, 2013 Uganda LUG meetup in Kampala, Uganda.
 
 ![Screenshot](/screenshot@2x.png?raw=true "Screenshot")
@@ -27,9 +26,7 @@ After hacking on the slides in the `source/` directory, build the presentation a
 
 The presentation will be available at [http://localhost:8000](http://localhost:8000).
 
-### LICENSE
-
-This repository contains the code of [Reveal.js](https://github.com/hakimel/reveal.js)
-which is licensed under the [MIT license](https://github.com/hakimel/reveal.js/blob/master/LICENSE).
+### License
+This repository contains the code of [reveal.js](https://github.com/hakimel/reveal.js) which is licensed under the [MIT license](https://github.com/hakimel/reveal.js/blob/master/LICENSE).
 
 Otherwise, the contents of `source/` are [Unlicensed](http://unlicense.org/UNLICENSE).
