@@ -29,4 +29,4 @@ The presentation will be available at [http://localhost:8000](http://localhost:8
 ### License
 This repository contains the code of [reveal.js](https://github.com/hakimel/reveal.js) which is licensed under the [MIT license](https://github.com/hakimel/reveal.js/blob/master/LICENSE).
 
-Otherwise, the contents of `source/` are [Unlicensed](http://unlicense.org/UNLICENSE).
+Otherwise, the contents of `source/` are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
