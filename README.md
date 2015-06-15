@@ -13,8 +13,8 @@ If you want to hack on this repo (ie for your own presentation) you will have to
 
 Then create a Python virtual environment to setup the required tools for building the presentation:
 
-    $ pyenv install 2.7.9
-    $ pyenv virtualenv 2.7.9 reveal
+    $ pyenv install 2.7.10
+    $ pyenv virtualenv 2.7.10 reveal
     $ pyenv activate reveal
     $ pip install -r requirements.txt
 
